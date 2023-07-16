@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>127/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Jul 16 14:19:11 EDT 2023</td>
+<td>Started on:</td><td>Sun Jul 16 16:50:21 EDT 2023</td>
 </tr>
-<tr><td>Total time:</td><td>274 seconds (274582 ms)</td>
+<tr><td>Total time:</td><td>3 seconds (3061 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,8 +67,8 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td><b>Attribute(s)</b></td>
 <td width="30%"><b>Exception</b></td>
@@ -76,640 +76,87 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='dsAlgo_TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsAlgo_TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To verify SignIn with Empty fields", "Optional[Login Action]"</td>
-<td></td>
-<td>0</td>
-<td>dsAlgo_TestRunner.TestRunner@2250b9f2</td></tr>
+<td title='dsAlgo_TestRunner.TestRunner.browserType()'><b>browserType</b><br>Test class: dsAlgo_TestRunner.TestRunner</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeTest on method browserType but has not been marked @Optional or defined
+in C:\Users\Viru\AppData\Local\Temp\testng-eclipse-1577739481\testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:267)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:684)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:306)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:663)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:652)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1098986569", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1098986569'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeTest on method browserType but has not been marked @Optional or defined
+in C:\Users\Viru\AppData\Local\Temp\testng-eclipse-1577739481\testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:267)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:684)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:306)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:663)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:652)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>-1689540621</td>
+<td>dsAlgo_TestRunner.TestRunner@17aad511</td></tr>
 <tr>
-<td title='dsAlgo_TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsAlgo_TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to all options in tree page", "Optional[Test Tree Page]"</td>
-<td></td>
-<td>1</td>
-<td>dsAlgo_TestRunner.TestRunner@2250b9f2</td></tr>
-<tr>
-<td title='dsAlgo_TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsAlgo_TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is presented with error message for empty fields below username textbox", "Optional[Registration verification and validation]"</td>
-<td></td>
-<td>0</td>
-<td>dsAlgo_TestRunner.TestRunner@2250b9f2</td></tr>
-<tr>
-<td title='dsAlgo_TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsAlgo_TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User selects the Graph item and verifies the Page Title", "Optional[Testing queue page]"</td>
-<td></td>
-<td>0</td>
-<td>dsAlgo_TestRunner.TestRunner@2250b9f2</td></tr>
-<tr>
-<td title='dsAlgo_TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsAlgo_TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to run code in tryEditor for Practice session of Array in python", "Optional[Test Array page]"</td>
-<td></td>
-<td>4</td>
-<td>dsAlgo_TestRunner.TestRunner@2250b9f2</td></tr>
-<tr>
-<td title='dsAlgo_TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsAlgo_TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to all options in array page", "Optional[Test Array page]"</td>
-<td></td>
+<td title='dsAlgo_TestRunner.TestRunner.setUpClass()'><b>setUpClass</b><br>Test class: dsAlgo_TestRunner.TestRunner<br>Parameters: org.testng.TestRunner@79d82f66</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;String.equals(Object)&quot; because &quot;browser&quot; is null
+	at dsAlgo_Driverfactory.DriverFactory.init_driver(DriverFactory.java:23)
+	at hooks.Hooks.getProperty(Hooks.java:41)
+	Suppressed: java.lang.IllegalArgumentException: Input must be set
+		at org.openqa.selenium.internal.Require.nonNull(Require.java:59)
+		at org.openqa.selenium.support.ui.FluentWait.&lt;init&gt;(FluentWait.java:97)
+		at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:77)
+		at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:46)
+		at dsAlgo_Utilities.PageUtils.explicit_wait(PageUtils.java:37)
+		at dsAlgo_PageObject.BHomePage.click_Btn(BHomePage.java:51)
+		at hooks.Hooks.getStart(Hooks.java:49)
+</pre></div><a href='#' onClick='toggleBox("stack-trace105966264", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace105966264'><pre>java.lang.NullPointerException: Cannot invoke &quot;String.equals(Object)&quot; because &quot;browser&quot; is null
+	at dsAlgo_Driverfactory.DriverFactory.init_driver(DriverFactory.java:23)
+	at hooks.Hooks.getProperty(Hooks.java:41)
+	Suppressed: java.lang.IllegalArgumentException: Input must be set
+		at org.openqa.selenium.internal.Require.nonNull(Require.java:59)
+		at org.openqa.selenium.support.ui.FluentWait.&lt;init&gt;(FluentWait.java:97)
+		at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:77)
+		at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:46)
+		at dsAlgo_Utilities.PageUtils.explicit_wait(PageUtils.java:37)
+		at dsAlgo_PageObject.BHomePage.click_Btn(BHomePage.java:51)
+		at hooks.Hooks.getStart(Hooks.java:49)
+</pre></div></td>
 <td>2</td>
-<td>dsAlgo_TestRunner.TestRunner@2250b9f2</td></tr>
-<tr>
-<td title='dsAlgo_TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsAlgo_TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to run invald code in tryEditor for Practice session of Array in python", "Optional[Test Array page]"</td>
-<td></td>
-<td>6</td>
-<td>dsAlgo_TestRunner.TestRunner@2250b9f2</td></tr>
-<tr>
-<td title='dsAlgo_TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsAlgo_TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User checks each of the topics in Graph with invalid python code", "Optional[Testing queue page]"</td>
-<td></td>
-<td>1</td>
-<td>dsAlgo_TestRunner.TestRunner@2250b9f2</td></tr>
-<tr>
-<td title='dsAlgo_TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsAlgo_TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able run code in tryEditor", "Optional[Test Stack Page]"</td>
-<td></td>
-<td>4</td>
-<td>dsAlgo_TestRunner.TestRunner@2250b9f2</td></tr>
-<tr>
-<td title='dsAlgo_TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsAlgo_TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To verify SignIn with invalid "ER@$" and "sdkfsk12 and gets the result "Invalid Username and Password"", "Optional[Login Action]"</td>
-<td></td>
-<td>1</td>
-<td>dsAlgo_TestRunner.TestRunner@2250b9f2</td></tr>
-<tr>
-<td title='dsAlgo_TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsAlgo_TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User  Login with  valid "sdet" and "sdet1234"", "Optional[Login Action]"</td>
-<td></td>
-<td>1</td>
-<td>dsAlgo_TestRunner.TestRunner@2250b9f2</td></tr>
-<tr>
-<td title='dsAlgo_TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsAlgo_TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to run code in Practice session of Array in python", "Optional[Test Array page]"</td>
-<td></td>
-<td>4</td>
-<td>dsAlgo_TestRunner.TestRunner@2250b9f2</td></tr>
-<tr>
-<td title='dsAlgo_TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsAlgo_TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to run code in tryEditor for Practice session of Array in python", "Optional[Test Array page]"</td>
-<td></td>
-<td>5</td>
-<td>dsAlgo_TestRunner.TestRunner@2250b9f2</td></tr>
-<tr>
-<td title='dsAlgo_TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsAlgo_TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is on Home Page and clicks on any dropdown "<value>" without sign in", "Optional[Launch Browser and Test Home Page]"</td>
-<td></td>
-<td>0</td>
-<td>dsAlgo_TestRunner.TestRunner@2250b9f2</td></tr>
-<tr>
-<td title='dsAlgo_TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsAlgo_TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is on Home Page and clicks on any getStarted link "Arrays" without sign in", "Optional[Launch Browser and Test Home Page]"</td>
-<td></td>
-<td>1</td>
-<td>dsAlgo_TestRunner.TestRunner@2250b9f2</td></tr>
-<tr>
-<td title='dsAlgo_TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsAlgo_TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User checks each of the topics in Linked List with valid python code", "Optional[user validates the Linked List Page]"</td>
-<td></td>
-<td>2</td>
-<td>dsAlgo_TestRunner.TestRunner@2250b9f2</td></tr>
-<tr>
-<td title='dsAlgo_TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsAlgo_TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User checks each of the topics in Graph with valid python code", "Optional[user validates the Linked List Page]"</td>
-<td></td>
-<td>1</td>
-<td>dsAlgo_TestRunner.TestRunner@2250b9f2</td></tr>
-<tr>
-<td title='dsAlgo_TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsAlgo_TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able run code in tryEditor", "Optional[Test DataStructure  page]"</td>
-<td></td>
-<td>3</td>
-<td>dsAlgo_TestRunner.TestRunner@2250b9f2</td></tr>
-<tr>
-<td title='dsAlgo_TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsAlgo_TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To verify Register Form with invalid Credentials", "Optional[Registration verification and validation]"</td>
-<td></td>
-<td>0</td>
-<td>dsAlgo_TestRunner.TestRunner@2250b9f2</td></tr>
-<tr>
-<td title='dsAlgo_TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsAlgo_TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to all options in array page", "Optional[Test Array page]"</td>
-<td></td>
-<td>1</td>
-<td>dsAlgo_TestRunner.TestRunner@2250b9f2</td></tr>
-<tr>
-<td title='dsAlgo_TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsAlgo_TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able run code in tryEditor", "Optional[Test Tree Page]"</td>
-<td></td>
-<td>1</td>
-<td>dsAlgo_TestRunner.TestRunner@2250b9f2</td></tr>
-<tr>
-<td title='dsAlgo_TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsAlgo_TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to all options in stack page", "Optional[Test Stack Page]"</td>
-<td></td>
-<td>1</td>
-<td>dsAlgo_TestRunner.TestRunner@2250b9f2</td></tr>
-<tr>
-<td title='dsAlgo_TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsAlgo_TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is on Home Page and clicks on any dropdown "<value>" without sign in", "Optional[Launch Browser and Test Home Page]"</td>
-<td></td>
-<td>0</td>
-<td>dsAlgo_TestRunner.TestRunner@2250b9f2</td></tr>
-<tr>
-<td title='dsAlgo_TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsAlgo_TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able run code in tryEditor", "Optional[Test Tree Page]"</td>
-<td></td>
-<td>1</td>
-<td>dsAlgo_TestRunner.TestRunner@2250b9f2</td></tr>
-<tr>
-<td title='dsAlgo_TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsAlgo_TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to all options in datastructure page", "Optional[Test DataStructure  page]"</td>
-<td></td>
-<td>1</td>
-<td>dsAlgo_TestRunner.TestRunner@2250b9f2</td></tr>
-<tr>
-<td title='dsAlgo_TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsAlgo_TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able run code in tryEditor", "Optional[Test Array page]"</td>
-<td></td>
-<td>3</td>
-<td>dsAlgo_TestRunner.TestRunner@2250b9f2</td></tr>
-<tr>
-<td title='dsAlgo_TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsAlgo_TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is on Home Page and clicks on any getStarted link "Data Structures-Introduction" without sign in", "Optional[Launch Browser and Test Home Page]"</td>
-<td></td>
-<td>0</td>
-<td>dsAlgo_TestRunner.TestRunner@2250b9f2</td></tr>
-<tr>
-<td title='dsAlgo_TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsAlgo_TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to all options in stack page", "Optional[Test Stack Page]"</td>
-<td></td>
-<td>2</td>
-<td>dsAlgo_TestRunner.TestRunner@2250b9f2</td></tr>
-<tr>
-<td title='dsAlgo_TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsAlgo_TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able run code in tryEditor", "Optional[Test Array page]"</td>
-<td></td>
-<td>3</td>
-<td>dsAlgo_TestRunner.TestRunner@2250b9f2</td></tr>
-<tr>
-<td title='dsAlgo_TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsAlgo_TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to all options in tree page", "Optional[Test Tree Page]"</td>
-<td></td>
-<td>0</td>
-<td>dsAlgo_TestRunner.TestRunner@2250b9f2</td></tr>
-<tr>
-<td title='dsAlgo_TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsAlgo_TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able run code in tryEditor", "Optional[Test Stack Page]"</td>
-<td></td>
-<td>3</td>
-<td>dsAlgo_TestRunner.TestRunner@2250b9f2</td></tr>
-<tr>
-<td title='dsAlgo_TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsAlgo_TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able run code in tryEditor", "Optional[Test Tree Page]"</td>
-<td></td>
-<td>1</td>
-<td>dsAlgo_TestRunner.TestRunner@2250b9f2</td></tr>
-<tr>
-<td title='dsAlgo_TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsAlgo_TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to Practice page", "Optional[user validates the Linked List Page]"</td>
-<td></td>
-<td>1</td>
-<td>dsAlgo_TestRunner.TestRunner@2250b9f2</td></tr>
-<tr>
-<td title='dsAlgo_TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsAlgo_TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User checks each of the topics in Graph with valid python code", "Optional[Testing queue page]"</td>
-<td></td>
-<td>1</td>
-<td>dsAlgo_TestRunner.TestRunner@2250b9f2</td></tr>
-<tr>
-<td title='dsAlgo_TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsAlgo_TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to all options in tree page", "Optional[Test Tree Page]"</td>
-<td></td>
-<td>1</td>
-<td>dsAlgo_TestRunner.TestRunner@2250b9f2</td></tr>
-<tr>
-<td title='dsAlgo_TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsAlgo_TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is on Home page and Clicks on Register", "Optional[Launch Browser and Test Home Page]"</td>
-<td></td>
-<td>0</td>
-<td>dsAlgo_TestRunner.TestRunner@2250b9f2</td></tr>
-<tr>
-<td title='dsAlgo_TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsAlgo_TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able tree run code in tryEditor", "Optional[Test Tree Page]"</td>
-<td></td>
-<td>1</td>
-<td>dsAlgo_TestRunner.TestRunner@2250b9f2</td></tr>
-<tr>
-<td title='dsAlgo_TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsAlgo_TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To verify Register Form with invalid Credentials", "Optional[Registration verification and validation]"</td>
-<td></td>
-<td>1</td>
-<td>dsAlgo_TestRunner.TestRunner@2250b9f2</td></tr>
-<tr>
-<td title='dsAlgo_TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsAlgo_TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to all practice questions", "Optional[Test Array page]"</td>
-<td></td>
-<td>1</td>
-<td>dsAlgo_TestRunner.TestRunner@2250b9f2</td></tr>
-<tr>
-<td title='dsAlgo_TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsAlgo_TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to all options in array page", "Optional[Test Array page]"</td>
-<td></td>
-<td>1</td>
-<td>dsAlgo_TestRunner.TestRunner@2250b9f2</td></tr>
-<tr>
-<td title='dsAlgo_TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsAlgo_TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to all options in tree page", "Optional[Test Tree Page]"</td>
-<td></td>
-<td>1</td>
-<td>dsAlgo_TestRunner.TestRunner@2250b9f2</td></tr>
-<tr>
-<td title='dsAlgo_TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsAlgo_TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is presented with error message for empty fields above Password Confirmation textbox", "Optional[Registration verification and validation]"</td>
-<td></td>
-<td>0</td>
-<td>dsAlgo_TestRunner.TestRunner@2250b9f2</td></tr>
-<tr>
-<td title='dsAlgo_TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsAlgo_TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able tree run code in tryEditor", "Optional[Test Tree Page]"</td>
-<td></td>
-<td>1</td>
-<td>dsAlgo_TestRunner.TestRunner@2250b9f2</td></tr>
-<tr>
-<td title='dsAlgo_TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsAlgo_TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to Practice page", "Optional[Test Array page]"</td>
-<td></td>
-<td>1</td>
-<td>dsAlgo_TestRunner.TestRunner@2250b9f2</td></tr>
-<tr>
-<td title='dsAlgo_TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsAlgo_TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to all options in array page", "Optional[Test Array page]"</td>
-<td></td>
-<td>2</td>
-<td>dsAlgo_TestRunner.TestRunner@2250b9f2</td></tr>
-<tr>
-<td title='dsAlgo_TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsAlgo_TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to all options in tree page", "Optional[Test Tree Page]"</td>
-<td></td>
-<td>1</td>
-<td>dsAlgo_TestRunner.TestRunner@2250b9f2</td></tr>
-<tr>
-<td title='dsAlgo_TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsAlgo_TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User checks each of the topics in Linked List with invalid python code", "Optional[user validates the Linked List Page]"</td>
-<td></td>
-<td>0</td>
-<td>dsAlgo_TestRunner.TestRunner@2250b9f2</td></tr>
-<tr>
-<td title='dsAlgo_TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsAlgo_TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able run code in tryEditor", "Optional[Test Stack Page]"</td>
-<td></td>
-<td>3</td>
-<td>dsAlgo_TestRunner.TestRunner@2250b9f2</td></tr>
-<tr>
-<td title='dsAlgo_TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsAlgo_TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User checks each of the topics in Graph with valid python code", "Optional[Testing queue page]"</td>
-<td></td>
-<td>1</td>
-<td>dsAlgo_TestRunner.TestRunner@2250b9f2</td></tr>
-<tr>
-<td title='dsAlgo_TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsAlgo_TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to all options in tree page", "Optional[Test Tree Page]"</td>
-<td></td>
-<td>1</td>
-<td>dsAlgo_TestRunner.TestRunner@2250b9f2</td></tr>
-<tr>
-<td title='dsAlgo_TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsAlgo_TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User checks each of the topics in Graph with invalid python code", "Optional[Testing queue page]"</td>
-<td></td>
-<td>1</td>
-<td>dsAlgo_TestRunner.TestRunner@2250b9f2</td></tr>
-<tr>
-<td title='dsAlgo_TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsAlgo_TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to all options in stack page", "Optional[Test Stack Page]"</td>
-<td></td>
-<td>1</td>
-<td>dsAlgo_TestRunner.TestRunner@2250b9f2</td></tr>
-<tr>
-<td title='dsAlgo_TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsAlgo_TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able run code in tryEditor", "Optional[Test Tree Page]"</td>
-<td></td>
-<td>1</td>
-<td>dsAlgo_TestRunner.TestRunner@2250b9f2</td></tr>
-<tr>
-<td title='dsAlgo_TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsAlgo_TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User checks each of the topics in Graph with valid python code", "Optional[Testing queue page]"</td>
-<td></td>
-<td>1</td>
-<td>dsAlgo_TestRunner.TestRunner@2250b9f2</td></tr>
-<tr>
-<td title='dsAlgo_TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsAlgo_TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User checks each of the topics in Linked List with valid python code", "Optional[user validates the Linked List Page]"</td>
-<td></td>
-<td>2</td>
-<td>dsAlgo_TestRunner.TestRunner@2250b9f2</td></tr>
-<tr>
-<td title='dsAlgo_TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsAlgo_TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User checks each of the topics in Linked List with valid python code", "Optional[user validates the Linked List Page]"</td>
-<td></td>
-<td>3</td>
-<td>dsAlgo_TestRunner.TestRunner@2250b9f2</td></tr>
-<tr>
-<td title='dsAlgo_TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsAlgo_TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is on Home Page and clicks on any dropdown "<value>" without sign in", "Optional[Launch Browser and Test Home Page]"</td>
-<td></td>
-<td>0</td>
-<td>dsAlgo_TestRunner.TestRunner@2250b9f2</td></tr>
-<tr>
-<td title='dsAlgo_TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsAlgo_TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able run code in tryEditor", "Optional[Test Tree Page]"</td>
-<td></td>
-<td>1</td>
-<td>dsAlgo_TestRunner.TestRunner@2250b9f2</td></tr>
-<tr>
-<td title='dsAlgo_TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsAlgo_TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to Practice page", "Optional[user validates the Linked List Page]"</td>
-<td></td>
-<td>1</td>
-<td>dsAlgo_TestRunner.TestRunner@2250b9f2</td></tr>
-<tr>
-<td title='dsAlgo_TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsAlgo_TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is on Home Page and clicks on any dropdown "<value>" without sign in", "Optional[Launch Browser and Test Home Page]"</td>
-<td></td>
-<td>1</td>
-<td>dsAlgo_TestRunner.TestRunner@2250b9f2</td></tr>
-<tr>
-<td title='dsAlgo_TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsAlgo_TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To verify SignIn with invalid "abcdefgh" and "zxyu1234 and gets the result "Invalid Username and Password"", "Optional[Login Action]"</td>
-<td></td>
-<td>1</td>
-<td>dsAlgo_TestRunner.TestRunner@2250b9f2</td></tr>
-<tr>
-<td title='dsAlgo_TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsAlgo_TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User selects the Linked List item and verifies the Page Title", "Optional[user validates the Linked List Page]"</td>
-<td></td>
-<td>1</td>
-<td>dsAlgo_TestRunner.TestRunner@2250b9f2</td></tr>
-<tr>
-<td title='dsAlgo_TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsAlgo_TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to run code in tryEditor for Practice session of Array in python", "Optional[Test Array page]"</td>
-<td></td>
-<td>6</td>
-<td>dsAlgo_TestRunner.TestRunner@2250b9f2</td></tr>
-<tr>
-<td title='dsAlgo_TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsAlgo_TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to all options in stack page", "Optional[Test Stack Page]"</td>
-<td></td>
-<td>1</td>
-<td>dsAlgo_TestRunner.TestRunner@2250b9f2</td></tr>
-<tr>
-<td title='dsAlgo_TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsAlgo_TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able tree run code in tryEditor", "Optional[Test Tree Page]"</td>
-<td></td>
-<td>1</td>
-<td>dsAlgo_TestRunner.TestRunner@2250b9f2</td></tr>
-<tr>
-<td title='dsAlgo_TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsAlgo_TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User checks each of the topics in Linked List with invalid python code", "Optional[user validates the Linked List Page]"</td>
-<td></td>
-<td>1</td>
-<td>dsAlgo_TestRunner.TestRunner@2250b9f2</td></tr>
-<tr>
-<td title='dsAlgo_TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsAlgo_TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to Practice page", "Optional[Test Tree Page]"</td>
-<td></td>
-<td>0</td>
-<td>dsAlgo_TestRunner.TestRunner@2250b9f2</td></tr>
-<tr>
-<td title='dsAlgo_TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsAlgo_TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is on Home Page and clicks on any dropdown "<value>" without sign in", "Optional[Launch Browser and Test Home Page]"</td>
-<td></td>
-<td>1</td>
-<td>dsAlgo_TestRunner.TestRunner@2250b9f2</td></tr>
-<tr>
-<td title='dsAlgo_TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsAlgo_TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able tree run code in tryEditor", "Optional[Test Tree Page]"</td>
-<td></td>
-<td>1</td>
-<td>dsAlgo_TestRunner.TestRunner@2250b9f2</td></tr>
-<tr>
-<td title='dsAlgo_TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsAlgo_TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To verify SignIn with password only", "Optional[Login Action]"</td>
-<td></td>
-<td>0</td>
-<td>dsAlgo_TestRunner.TestRunner@2250b9f2</td></tr>
-<tr>
-<td title='dsAlgo_TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsAlgo_TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To verify SignIn with username only", "Optional[Login Action]"</td>
-<td></td>
-<td>0</td>
-<td>dsAlgo_TestRunner.TestRunner@2250b9f2</td></tr>
-<tr>
-<td title='dsAlgo_TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsAlgo_TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User checks each of the topics in Graph with invalid python code", "Optional[user validates the Linked List Page]"</td>
-<td></td>
-<td>1</td>
-<td>dsAlgo_TestRunner.TestRunner@2250b9f2</td></tr>
-<tr>
-<td title='dsAlgo_TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsAlgo_TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to all options in tree page", "Optional[Test Tree Page]"</td>
-<td></td>
-<td>0</td>
-<td>dsAlgo_TestRunner.TestRunner@2250b9f2</td></tr>
-<tr>
-<td title='dsAlgo_TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsAlgo_TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to run code in Practice session of Array in python", "Optional[Test Array page]"</td>
-<td></td>
-<td>5</td>
-<td>dsAlgo_TestRunner.TestRunner@2250b9f2</td></tr>
-<tr>
-<td title='dsAlgo_TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsAlgo_TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able tree run code in tryEditor", "Optional[Test Tree Page]"</td>
-<td></td>
-<td>1</td>
-<td>dsAlgo_TestRunner.TestRunner@2250b9f2</td></tr>
-<tr>
-<td title='dsAlgo_TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsAlgo_TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able run code in tryEditor", "Optional[Test Array page]"</td>
-<td></td>
-<td>3</td>
-<td>dsAlgo_TestRunner.TestRunner@2250b9f2</td></tr>
-<tr>
-<td title='dsAlgo_TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsAlgo_TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To verify Register Form with invalid Credentials", "Optional[Registration verification and validation]"</td>
-<td></td>
-<td>1</td>
-<td>dsAlgo_TestRunner.TestRunner@2250b9f2</td></tr>
-<tr>
-<td title='dsAlgo_TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsAlgo_TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able run code in tryEditor", "Optional[Test Array page]"</td>
-<td></td>
-<td>3</td>
-<td>dsAlgo_TestRunner.TestRunner@2250b9f2</td></tr>
-<tr>
-<td title='dsAlgo_TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsAlgo_TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to all practice questions", "Optional[Test Array page]"</td>
-<td></td>
-<td>1</td>
-<td>dsAlgo_TestRunner.TestRunner@2250b9f2</td></tr>
-<tr>
-<td title='dsAlgo_TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsAlgo_TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able stack run code in tryEditor", "Optional[Test Stack Page]"</td>
-<td></td>
-<td>3</td>
-<td>dsAlgo_TestRunner.TestRunner@2250b9f2</td></tr>
-<tr>
-<td title='dsAlgo_TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsAlgo_TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User checks each of the topics in Graph with invalid python code", "Optional[user validates the Linked List Page]"</td>
-<td></td>
-<td>1</td>
-<td>dsAlgo_TestRunner.TestRunner@2250b9f2</td></tr>
-<tr>
-<td title='dsAlgo_TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsAlgo_TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is on Home Page and clicks on any getStarted link "Graph" without sign in", "Optional[Launch Browser and Test Home Page]"</td>
-<td></td>
-<td>0</td>
-<td>dsAlgo_TestRunner.TestRunner@2250b9f2</td></tr>
-<tr>
-<td title='dsAlgo_TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsAlgo_TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is on Home Page and clicks on any getStarted link "Stack" without sign in", "Optional[Launch Browser and Test Home Page]"</td>
-<td></td>
-<td>0</td>
-<td>dsAlgo_TestRunner.TestRunner@2250b9f2</td></tr>
-<tr>
-<td title='dsAlgo_TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsAlgo_TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able run code in tryEditor", "Optional[Test Array page]"</td>
-<td></td>
-<td>3</td>
-<td>dsAlgo_TestRunner.TestRunner@2250b9f2</td></tr>
-<tr>
-<td title='dsAlgo_TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsAlgo_TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To verify Register Form with invalid Credentials", "Optional[Registration verification and validation]"</td>
-<td></td>
-<td>1</td>
-<td>dsAlgo_TestRunner.TestRunner@2250b9f2</td></tr>
-<tr>
-<td title='dsAlgo_TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsAlgo_TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to all options in array page", "Optional[Test Array page]"</td>
-<td></td>
-<td>0</td>
-<td>dsAlgo_TestRunner.TestRunner@2250b9f2</td></tr>
-<tr>
-<td title='dsAlgo_TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsAlgo_TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To verify Register Form with invalid Credentials", "Optional[Registration verification and validation]"</td>
-<td></td>
-<td>0</td>
-<td>dsAlgo_TestRunner.TestRunner@2250b9f2</td></tr>
-<tr>
-<td title='dsAlgo_TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsAlgo_TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to all options in tree page", "Optional[Test Tree Page]"</td>
-<td></td>
-<td>1</td>
-<td>dsAlgo_TestRunner.TestRunner@2250b9f2</td></tr>
-<tr>
-<td title='dsAlgo_TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsAlgo_TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is on Home Page and clicks on any getStarted link "Tree" without sign in", "Optional[Launch Browser and Test Home Page]"</td>
-<td></td>
-<td>0</td>
-<td>dsAlgo_TestRunner.TestRunner@2250b9f2</td></tr>
-<tr>
-<td title='dsAlgo_TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsAlgo_TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is on Home Page and clicks on any getStarted link "Queue" without sign in", "Optional[Launch Browser and Test Home Page]"</td>
-<td></td>
-<td>0</td>
-<td>dsAlgo_TestRunner.TestRunner@2250b9f2</td></tr>
-<tr>
-<td title='dsAlgo_TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsAlgo_TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to all options in array page", "Optional[Test Array page]"</td>
-<td></td>
-<td>1</td>
-<td>dsAlgo_TestRunner.TestRunner@2250b9f2</td></tr>
-<tr>
-<td title='dsAlgo_TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsAlgo_TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to all options in stack page", "Optional[Test Stack Page]"</td>
-<td></td>
-<td>0</td>
-<td>dsAlgo_TestRunner.TestRunner@2250b9f2</td></tr>
-<tr>
-<td title='dsAlgo_TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsAlgo_TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able run code in tryEditor", "Optional[Test Tree Page]"</td>
-<td></td>
-<td>1</td>
-<td>dsAlgo_TestRunner.TestRunner@2250b9f2</td></tr>
-<tr>
-<td title='dsAlgo_TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsAlgo_TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is on Home Page and clicks on any getStarted link "Linked List" without sign in", "Optional[Launch Browser and Test Home Page]"</td>
-<td></td>
-<td>0</td>
-<td>dsAlgo_TestRunner.TestRunner@2250b9f2</td></tr>
-<tr>
-<td title='dsAlgo_TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsAlgo_TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To verify Register Form with invalid Credentials", "Optional[Registration verification and validation]"</td>
-<td></td>
-<td>1</td>
-<td>dsAlgo_TestRunner.TestRunner@2250b9f2</td></tr>
-<tr>
-<td title='dsAlgo_TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsAlgo_TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User checks each of the topics in Graph with valid python code", "Optional[user validates the Linked List Page]"</td>
-<td></td>
-<td>1</td>
-<td>dsAlgo_TestRunner.TestRunner@2250b9f2</td></tr>
-<tr>
-<td title='dsAlgo_TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsAlgo_TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To verify SignIn with invalid "asdfger" and "@@@@ and gets the result "Invalid Username and Password"", "Optional[Login Action]"</td>
-<td></td>
-<td>1</td>
-<td>dsAlgo_TestRunner.TestRunner@2250b9f2</td></tr>
-<tr>
-<td title='dsAlgo_TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsAlgo_TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User checks each of the topics in Graph with invalid python code", "Optional[Testing queue page]"</td>
-<td></td>
-<td>1</td>
-<td>dsAlgo_TestRunner.TestRunner@2250b9f2</td></tr>
-<tr>
-<td title='dsAlgo_TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsAlgo_TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is on Home Page and clicks on any dropdown "<value>" without sign in", "Optional[Launch Browser and Test Home Page]"</td>
-<td></td>
-<td>0</td>
-<td>dsAlgo_TestRunner.TestRunner@2250b9f2</td></tr>
-<tr>
-<td title='dsAlgo_TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsAlgo_TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able run code in tryEditor", "Optional[Test DataStructure  page]"</td>
-<td></td>
-<td>3</td>
-<td>dsAlgo_TestRunner.TestRunner@2250b9f2</td></tr>
-<tr>
-<td title='dsAlgo_TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsAlgo_TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to all options in tree page", "Optional[Test Tree Page]"</td>
-<td></td>
-<td>0</td>
-<td>dsAlgo_TestRunner.TestRunner@2250b9f2</td></tr>
-<tr>
-<td title='dsAlgo_TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsAlgo_TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User selects the Graph item and verifies the Page Title", "Optional[user validates the Linked List Page]"</td>
-<td></td>
-<td>0</td>
-<td>dsAlgo_TestRunner.TestRunner@2250b9f2</td></tr>
-<tr>
-<td title='dsAlgo_TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsAlgo_TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User checks each of the topics in Graph with valid python code", "Optional[Testing queue page]"</td>
-<td></td>
-<td>1</td>
-<td>dsAlgo_TestRunner.TestRunner@2250b9f2</td></tr>
-<tr>
-<td title='dsAlgo_TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsAlgo_TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to Practice page", "Optional[user validates the Linked List Page]"</td>
-<td></td>
-<td>1</td>
-<td>dsAlgo_TestRunner.TestRunner@2250b9f2</td></tr>
-<tr>
-<td title='dsAlgo_TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsAlgo_TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able stack run code in tryEditor", "Optional[Test Stack Page]"</td>
-<td></td>
-<td>3</td>
-<td>dsAlgo_TestRunner.TestRunner@2250b9f2</td></tr>
-<tr>
-<td title='dsAlgo_TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsAlgo_TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to run code in Practice session of Array in python", "Optional[Test Array page]"</td>
-<td></td>
-<td>6</td>
-<td>dsAlgo_TestRunner.TestRunner@2250b9f2</td></tr>
-<tr>
-<td title='dsAlgo_TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsAlgo_TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To verify Register Form with username and password only", "Optional[Registration verification and validation]"</td>
-<td></td>
-<td>1</td>
-<td>dsAlgo_TestRunner.TestRunner@2250b9f2</td></tr>
-<tr>
-<td title='dsAlgo_TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsAlgo_TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is on Home page and Clicks on Signins", "Optional[Login Action]"</td>
-<td></td>
-<td>0</td>
-<td>dsAlgo_TestRunner.TestRunner@2250b9f2</td></tr>
-<tr>
-<td title='dsAlgo_TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsAlgo_TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able run code in tryEditor", "Optional[Test Array page]"</td>
-<td></td>
-<td>3</td>
-<td>dsAlgo_TestRunner.TestRunner@2250b9f2</td></tr>
-<tr>
-<td title='dsAlgo_TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsAlgo_TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User checks each of the topics in Linked List with invalid python code", "Optional[user validates the Linked List Page]"</td>
-<td></td>
-<td>1</td>
-<td>dsAlgo_TestRunner.TestRunner@2250b9f2</td></tr>
-<tr>
-<td title='dsAlgo_TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsAlgo_TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is presented with error message for empty fields below password textbox", "Optional[Registration verification and validation]"</td>
-<td></td>
-<td>0</td>
-<td>dsAlgo_TestRunner.TestRunner@2250b9f2</td></tr>
-<tr>
-<td title='dsAlgo_TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsAlgo_TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to run invald code in tryEditor for Practice session of Array in python", "Optional[Test Array page]"</td>
-<td></td>
-<td>5</td>
-<td>dsAlgo_TestRunner.TestRunner@2250b9f2</td></tr>
-<tr>
-<td title='dsAlgo_TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsAlgo_TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to Practice page", "Optional[Test Stack Page]"</td>
-<td></td>
-<td>0</td>
-<td>dsAlgo_TestRunner.TestRunner@2250b9f2</td></tr>
-<tr>
-<td title='dsAlgo_TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsAlgo_TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To verify Register Form with Empty fields", "Optional[Registration verification and validation]"</td>
-<td></td>
-<td>0</td>
-<td>dsAlgo_TestRunner.TestRunner@2250b9f2</td></tr>
-<tr>
-<td title='dsAlgo_TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsAlgo_TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User checks each of the topics in Linked List with valid python code", "Optional[user validates the Linked List Page]"</td>
-<td></td>
-<td>2</td>
-<td>dsAlgo_TestRunner.TestRunner@2250b9f2</td></tr>
-<tr>
-<td title='dsAlgo_TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsAlgo_TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able tree run code in tryEditor", "Optional[Test Tree Page]"</td>
-<td></td>
-<td>1</td>
-<td>dsAlgo_TestRunner.TestRunner@2250b9f2</td></tr>
-<tr>
-<td title='dsAlgo_TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsAlgo_TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User checks each of the topics in Graph with invalid python code", "Optional[Testing queue page]"</td>
-<td></td>
-<td>1</td>
-<td>dsAlgo_TestRunner.TestRunner@2250b9f2</td></tr>
-<tr>
-<td title='dsAlgo_TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsAlgo_TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "to register with all the data", "Optional[Registration verification and validation]"</td>
-<td></td>
-<td>6</td>
-<td>dsAlgo_TestRunner.TestRunner@2250b9f2</td></tr>
-<tr>
-<td title='dsAlgo_TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsAlgo_TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User checks each of the topics in Linked List with invalid python code", "Optional[user validates the Linked List Page]"</td>
-<td></td>
-<td>1</td>
-<td>dsAlgo_TestRunner.TestRunner@2250b9f2</td></tr>
-<tr>
-<td title='dsAlgo_TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsAlgo_TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able stack run code in tryEditor", "Optional[Test Stack Page]"</td>
-<td></td>
-<td>4</td>
-<td>dsAlgo_TestRunner.TestRunner@2250b9f2</td></tr>
-<tr>
-<td title='dsAlgo_TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsAlgo_TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is on Home page and Clicks on Signin", "Optional[Launch Browser and Test Home Page]"</td>
-<td></td>
-<td>0</td>
-<td>dsAlgo_TestRunner.TestRunner@2250b9f2</td></tr>
-<tr>
-<td title='dsAlgo_TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsAlgo_TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to run invald code in tryEditor for Practice session of Array in python", "Optional[Test Array page]"</td>
-<td></td>
-<td>5</td>
-<td>dsAlgo_TestRunner.TestRunner@2250b9f2</td></tr>
-<tr>
-<td title='dsAlgo_TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsAlgo_TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to all options in stack page", "Optional[Test Stack Page]"</td>
-<td></td>
-<td>0</td>
-<td>dsAlgo_TestRunner.TestRunner@2250b9f2</td></tr>
-<tr>
-<td title='dsAlgo_TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsAlgo_TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to all practice questions", "Optional[Test Array page]"</td>
-<td></td>
-<td>1</td>
-<td>dsAlgo_TestRunner.TestRunner@2250b9f2</td></tr>
-<tr>
-<td title='dsAlgo_TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsAlgo_TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to all options in tree page", "Optional[Test Tree Page]"</td>
-<td></td>
-<td>1</td>
-<td>dsAlgo_TestRunner.TestRunner@2250b9f2</td></tr>
-<tr>
-<td title='dsAlgo_TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsAlgo_TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to all options in tree page", "Optional[Test Tree Page]"</td>
-<td></td>
-<td>1</td>
-<td>dsAlgo_TestRunner.TestRunner@2250b9f2</td></tr>
-<tr>
-<td title='dsAlgo_TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: dsAlgo_TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To verify Register Form with invalid Credentials", "Optional[Registration verification and validation]"</td>
-<td></td>
-<td>1</td>
-<td>dsAlgo_TestRunner.TestRunner@2250b9f2</td></tr>
+<td>dsAlgo_TestRunner.TestRunner@17aad511</td></tr>
 </table><p>
 </body>
 </html>

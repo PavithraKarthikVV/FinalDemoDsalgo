@@ -53,7 +53,7 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
 					
 			return super.scenarios();
 	    }
-		/*
+		
 		 public final static ThreadLocal<String> BROWSER = new ThreadLocal<>();
 		@BeforeTest
 		@Parameters({"browser"})
@@ -61,7 +61,7 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
 		{ 
 		TestRunner.BROWSER.set(browser);
 		LoggerLoad.info("setting the browser type from test runner class "+browser);
-		}*/
+		}
 		}
 	
 		

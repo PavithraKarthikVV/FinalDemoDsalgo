@@ -33,8 +33,8 @@ public class Hooks {
 	{  
 		configReader =new ConfigReader();
 		prop=configReader.init_prop();	
-    	//String browserName = TestRunner.BROWSER.get(); //gets the browsername from the testrunner parameter
-		String browserName=prop.getProperty("browser");
+    	String browserName = TestRunner.BROWSER.get(); //gets the browsername from the testrunner parameter
+		//String browserName=prop.getProperty("browser");
 		String geturl=prop.getProperty("url");
 		LoggerLoad.info("Launching the URL :"+geturl);
 		driverFactory=new DriverFactory();
