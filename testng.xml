@@ -10,10 +10,10 @@
       <class name="dsAlgo_TestRunner.TestRunner"></class>
     </classes>
     </test> 
-    <test name="TestChrome">
+  <!--  <test name="TestChrome">
 	<parameter name="browser" value="chrome"/>
     <classes>
       <class name="dsAlgo_TestRunner.TestRunner"></class>
    </classes>
-  </test> <!-- Test -->
+  </test> -->
 </suite> <!-- Suite -->
